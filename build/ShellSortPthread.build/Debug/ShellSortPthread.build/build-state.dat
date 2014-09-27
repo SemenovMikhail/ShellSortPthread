@@ -1,0 +1,64 @@
+TShellSortPthread
+v7
+r0
+t433503046.094172
+cCheck dependencies
+cCompileC build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+cLd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread" normal x86_64
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004ABBF0FD00000000000000EE
+t1253830909
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004A5C14A70000000000004174
+t1247548583
+s16756
+
+N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread
+t1411810027
+s9040
+
+N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/ShellSortPthread.LinkFileList
+c00000000542682EA000000000000009A
+t1411810026
+s154
+
+N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o
+t1411810027
+s2724
+
+N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c
+c00000000542682CF0000000000000089
+t1411809999
+s137
+i<stdio.h>
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies433503046#433503046#0(0"0(0#1#0"4317954048#0"0#
+
+CCompileC build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
+s433502826.962763
+e433502827.188456
+r1
+xCompileC
+xbuild/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o
+x/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c433502826#433502827#0(0"0(0#0#73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c17187340288#1762"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-generated-files.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-own-target-headers.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-all-target-headers.hmap" -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-project-headers.hmap" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/include" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources/x86_64" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources" -c "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o"0#
+
+CLd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread" normal x86_64
+s433502827.188586
+e433502827.544004
+r1
+xLd
+x/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread
+xnormal
+xx86_64
+lSLF07#2@100"Link /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread433502827#433502827#0(0"0(0#0#0"4317954048#684"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" -filelist "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/ShellSortPthread.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread"0#
+
