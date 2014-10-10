@@ -1,7 +1,7 @@
 TShellSortPthread
 v7
 r0
-t433673920.005740
+t434630514.869408
 cCheck dependencies
 cCompileC build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
 cLd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread" normal x86_64
@@ -41,6 +41,11 @@ c000000004A5C14A70000000000001731
 t1247548583
 s5937
 
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/time.h
+c000000004A5C14A7000000000000178E
+t1247548583
+s6030
+
 N/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h
 c000000004A5C14A7000000000000563E
 t1247548583
@@ -52,8 +57,8 @@ t1242688292
 s3198
 
 N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread
-t1411981120
-s14392
+t1412937714
+s14576
 
 N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/ShellSortPthread.LinkFileList
 c00000000542682EA000000000000009A
@@ -61,13 +66,13 @@ t1411810026
 s154
 
 N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o
-t1411981115
-s10608
+t1412937714
+s12036
 
 N/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c
-c0000000054291F3B00000000000011C9
-t1411981115
-s4553
+c000000005437B7F20000000000001544
+t1412937714
+s5444
 i<stdio.h>
 i<stdlib.h>
 i<unistd.h>
@@ -77,14 +82,15 @@ i<semaphore.h>
 i<errno.h>
 i<limits.h>
 i<stdlib.h>
+i<time.h>
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies433673919#433673919#0(0"0(0#1#0"4317954048#0"0#
+lSLF07#2@18"Check dependencies434630514#434630514#0(0"0(0#1#0"4317954048#0"0#
 
 CCompileC build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" normal x86_64 c com.apple.compilers.gcc.4_2
-s433673919.984941
-e433673919.986077
+s434630514.738859
+e434630514.839113
 r1
 xCompileC
 xbuild/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o
@@ -93,15 +99,15 @@ xnormal
 xx86_64
 xc
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@81"Compile /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c433673919#433673919#0(270"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c: In function 'main':/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c:49: warning: passing argument 1 of 'write_to_inputfile' discards qualifiers from pointer target type1(22@87"Passing argument 1 of 'write_to_inputfile' discards qualifiers from pointer target type433673919#83#163#0(6@73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c433673915#49#0#49#0#70"passing argument * of '*' discards qualifiers from pointer target type0(0#0#73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c4317954048#1762"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-generated-files.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-own-target-headers.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-all-target-headers.hmap" -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-project-headers.hmap" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/include" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources/x86_64" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources" -c "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o"0#
+lSLF07#2@81"Compile /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c434630514#434630514#0(506"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c: In function 'main':/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c:51: warning: passing argument 1 of 'write_to_inputfile' discards qualifiers from pointer target type/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c: In function 'shellSort_single':/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c:192: warning: control reaches end of non-void function2(22@87"Passing argument 1 of 'write_to_inputfile' discards qualifiers from pointer target type434630514#83#163#0(6@73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c434630514#51#0#51#0#70"passing argument * of '*' discards qualifiers from pointer target type0(22@40"Control reaches end of non-void function434630514#341#117#0(6@73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c434630514#192#0#192#0#40"control reaches end of non-void function0(0#0#73"/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c4317954048#1762"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-generated-files.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-own-target-headers.hmap" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-all-target-headers.hmap" -iquote "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/ShellSortPthread-project-headers.hmap" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/include" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources/x86_64" "-I/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/DerivedSources" -c "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/main.c" -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/main.o"0#
 
 CLd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread" normal x86_64
-s433673919.986133
-e433673920.005698
+s434630514.839173
+e434630514.869369
 r1
 xLd
 x/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread
 xnormal
 xx86_64
-lSLF07#2@100"Link /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread433673919#433673920#0(0"0(0#0#0"4317954048#684"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" -filelist "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/ShellSortPthread.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread"0#
+lSLF07#2@100"Link /Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread434630514#434630514#0(0"0(0#0#0"4317954048#684"    cd "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" "-F/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug" -filelist "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/ShellSortPthread.build/Debug/ShellSortPthread.build/Objects-normal/x86_64/ShellSortPthread.LinkFileList" -mmacosx-version-min=10.6 -o "/Users/cortez/Уроки/3 курс/ОСи/task_1/ShellSortPthread/build/Debug/ShellSortPthread"0#
 

@@ -7,6 +7,7 @@
 #include <errno.h>
 #include <limits.h>
 #include <stdlib.h>
+#include <time.h>
 
 typedef struct
 {
@@ -15,6 +16,7 @@ typedef struct
 } workpart;
 
 void *shellSort(void *args);
+void *shellSort_single(void *args);
 void MergeSort(int *arrayA, int sizeA, int* arrayB, int sizeB, int* arrayC, int sizeC);
 void write_to_inputfile(char *filename, int size);
 
@@ -23,9 +25,9 @@ int main(int argc, const char* argv[]) {
 		printf("program format: program input_file output_file thread_count\n");
 		return -1;
 	}
-	FILE *f= fopen (argv[1], "rt");
 	printf("Input file: %s\n", argv[1]);
 	printf("Output file: %s\n", argv[2]);
+	FILE *f= fopen (argv[1], "rt");
 	if (f == NULL) {
 		printf ("can not open file %s\n", "infile");
 		return -1;
@@ -46,7 +48,7 @@ int main(int argc, const char* argv[]) {
 		}
 	}
 	printf("Thread count: %d\n", thread_count);
-	write_to_inputfile(argv[1], 400);
+	write_to_inputfile(argv[1], 4000);
 	
 	fscanf(f, "%d ", &global_size);
 	printf("Global size = %d\n", global_size);
@@ -55,19 +57,39 @@ int main(int argc, const char* argv[]) {
 		printf ("can not allocate memory\n");
 		return -1;
 	}
-	printf("Initial array: \n");
+	
+	int array[4000];
 	for (i= 0; i < global_size; i++) 
 	{
+		int k;
 		fscanf (f, "%d ", in+i);
-		printf("%d ", *(in+i));
+		k = *(in+i);
+		array[i] = k;
 	}
-	printf("\n");
+	printf("\n\n");
 	fclose (f);
+	
+	clock_t begin, end;
+	double time_spent;
+	
+	workpart single_thread_wp;
+	single_thread_wp.data = array;
+	single_thread_wp.count = global_size;
+	
+	begin = clock();
+	shellSort_single(&single_thread_wp);
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	for (i = 0; i < global_size; i++) {
+	}
+	
+	printf("\nTIME for single thread Shellsort %f", time_spent);
+	
+	begin = clock();
 	workpart wp[thread_count];
 	pthread_t thr[thread_count];
 	for (i=0; i < thread_count; i++) {
 		wp[i].data= in + (global_size/thread_count)*i;
-		//wp[i].count= (i<3) ? global_size/thread_count : global_size - (global_size/thread_count)*3;
 		wp[i].count = global_size/thread_count;
 		if (pthread_create(&thr[i], NULL, shellSort,( void *)&wp[i])) {
 			printf ("thread %d creation failed", i);
@@ -78,11 +100,9 @@ int main(int argc, const char* argv[]) {
 		printf ("thread %d join failed", i);
 		return -1;
 	}
-	printf("\nArrays after shellSort:\n");
+	
 	for (i=0; i < thread_count; i++) {
-		printf("\n%d) ", i+1);
 		for (j=0; j < wp[i].count; j++) {
-			printf("%d ", wp[i].data[j]);
 		}
 	}
 	printf("\n\n");
@@ -99,6 +119,10 @@ int main(int argc, const char* argv[]) {
 	int *merge_final = malloc(sizeof(int)*global_size);
 	MergeSort(merge_part_1, (wp[0].count+wp[1].count), merge_part_2, (wp[2].count+wp[3].count), merge_final, global_size);
 	
+	end = clock();
+	time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
+	printf("\nTIME for Multi-thread shellsort + mergesort %f\n", time_spent);
+	
 	f= fopen (argv[2], "w");
 	if (!f) {
 		printf ("can not create file %s", "outfile");
@@ -106,9 +130,8 @@ int main(int argc, const char* argv[]) {
 	}
 	fprintf (f, "%d\n", global_size);
 	
-	printf("Array after MergeSort:\n");
 	for (i=0; i < global_size; i++) {
-		printf("%d ", merge_final[i]);
+		//printf("%d ", merge_final[i]);
 		fprintf (f, "%d\n", merge_final[i]);
 	}
 	printf("\n");
@@ -141,6 +164,31 @@ void *shellSort(void *curworkpart)
         step /= 2;
     }
     pthread_exit("Thread exit");
+}
+
+void *shellSort_single(void *curworkpart)
+{
+    int n = ((workpart *)curworkpart)->count;
+    int *a = ((workpart *)curworkpart)->data;
+	
+    int step = n / 2;
+    int i, j;
+	
+    while (step > 0)
+    {
+        for (i = 0; i < n - step; i++)
+        {
+            j = i;
+            while ((j >= 0) && (a[j]) > a[j + step])
+            {
+                int buf = a[j];
+                a[j] = a[j + step];
+                a[j + step] = buf;
+                j--;
+            }
+        }
+        step /= 2;
+    }
 }
 
 void MergeSort(int *arrayA, int sizeA, int *arrayB, int sizeB, int *arrayC, int sizeC)
